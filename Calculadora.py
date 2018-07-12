@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+
+class calc:
+    def suma(num1, num2):
+        num1 + num2
+    def resta(num1, num2):
+        num1 - num2
+
 def hexa_binario():
     Hexa = "AAABC"
     binario =""
@@ -36,5 +44,3 @@ def hexa_binario():
             x = 0100
             binario = str(binario) + str(x)
     print (binario)
-
-hexa_binario()
