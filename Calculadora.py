@@ -44,3 +44,25 @@ def hexa_binario():
             x = 0100
             binario = str(binario) + str(x)
     print (binario)
+
+def binario_a_decimal(x):
+    n = len (x)
+    valor = 0
+    for xs in x:
+        if xs == '1':
+            valor = valor + 2**(n-1)
+        n -=1
+    print binario_a_decimal(x) 
+
+def octal_to_decimal(number):
+    i = 1
+    decimal = 0
+    while (number != 0):
+        reminder = number % 8
+        number /= 8
+        decimal += reminder * i
+        i *= 8
+    return decimal
+
+def hexadecimal_a_decimal(d):
+    print int(d,16)
